@@ -1,0 +1,32 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "first_name": "Rohan ",
+      "last_name": "Sharma",
+      "phone_number": 8765351232,
+      "email": "rohan@gmail.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Shital ",
+      "last_name": "Joshi",
+      "phone_number": 8734562321,
+      "email": "shital@gmail.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Manish",
+      "last_name": "Agrwal",
+      "phone_number": 7820454323,
+      "email": "manish@gmail.com"
+    },
+    {
+      "id": 4,
+      "first_name": "Nilesh",
+      "last_name": "Gupta",
+      "phone_number": 7865452343,
+      "email": "nilesh@gmail.com"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <form [formGroup]="customerForm">
+      <div>
+        <div class="body">
+          <div class="row clearfix">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="exampleInputEmail1">First Name</label>
+                <input
+                  formControlName="first_name"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Last Name</label>
+                <input
+                  formControlName="last_name"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email </label>
+                <input formControlName="email" class="form-control" />
+                <small
+                  class="text-danger"
+                  *ngIf="customerForm.get('email')?.hasError('email')"
+                >
+                  Please enter a valid email address.
+                </small>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Phone Number</label>
+                <input
+                  formControlName="phone_number"
+                  class="form-control"
+                  required
+                  type="number"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<hr />
+<div class="button-demo text-center">
+  <button class="btn btn-danger" type="button" (click)="onCancelForm()">
+    Back
+  </button>
+  <button
+    class="btn btn-primary mr5 submit margin-10"
+    type="button"
+    *ngIf="submitBtn"
+    (click)="onSubmit()"
+  >
+    {{ btnVal }}
+  </button>
+</div>

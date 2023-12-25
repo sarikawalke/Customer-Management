@@ -1,0 +1,13 @@
+.card {
+  width: 70%;
+  margin: 10% auto; /* top margin, center horizontally, no bottom margin */
+  background-color: rgba(165, 165, 165, 0.05);
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-left: 10px;
+}
